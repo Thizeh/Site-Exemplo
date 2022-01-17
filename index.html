@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Almond Cleaning LLC</title>
+    <link rel="stylesheet" href="/CSS/main.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">Almond<span>Cleaning</span></a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="/Assets/img/logo-cibele.jpg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="/Assets/exit.svg"
+            alt="Close Navigation"
+          />
+          <ul class="primary-nav">
+            <li class="sec1"><a href="#sec1">Home</a></li>
+            <li><a href="#sec2">Features</a></li>
+            <li><a href="#sec4">Testimonials</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li><a href="#sec5">Contact</a></li>
+            <li class="go-premium-cta"><a href="#">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <section class="hero" id="sec1">
+      <div class="container">
+        <div class="left-col">
+          <p class="subhead">The best House Cleaning</p>
+          <h1>We make your house clean and bright</h1>
+
+          <div class="hero-cta">
+            <a href="#" class="primary-cta">Find the nearest unit </a>
+            <a href="#" class="watch-video-cta">
+              <img src="/Assets/watch.svg" alt="Watch a video" />Watch a video
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="/Assets/illustration.svg"
+          class="hero-img"
+          alt="Illustration"
+        />
+      </div>
+    </section>
+
+    <section class="features-section" id="sec2">
+      <div class="container">
+        <ul class="features-list">
+          <li>Caractetistica 1</li>
+          <li>Caractetistica 2</li>
+          <li>Caractetistica 3</li>
+          <li>Caractetistica 4</li>
+          <li>Caractetistica 5</li>
+          <li>Caractetistica 6</li>
+          <li>Caractetistica 7</li>
+        </ul>
+
+        <img src="/Assets/img/cleaning house.jpg" alt="Man holding phone" />
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="sec4">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="/Assets/img/profile-pattern.png" alt="Person" />
+
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur consectetur quasi possimus placeat suscipit eaque
+              quidem, ipsa, quae culpa sint aperiam quos assumenda nihil rerum
+              maxime! Nam assumenda doloribus qui!
+            </blockquote>
+
+            <cite>- Jane Doe</cite>
+          </li>
+
+          <li>
+            <img src="/Assets/img/profile-pattern.png" alt="Person" />
+
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur consectetur quasi possimus placeat suscipit eaque
+              quidem, ipsa, quae culpa sint aperiam quos assumenda nihil rerum
+              maxime! Nam assumenda doloribus qui!
+            </blockquote>
+
+            <cite>- Jane Doe</cite>
+          </li>
+
+          <li>
+            <img src="/Assets/img/profile-pattern.png" alt="Person" />
+
+            <blockquote>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequatur consectetur quasi possimus placeat suscipit eaque
+              quidem, ipsa, quae culpa sint aperiam quos assumenda nihil rerum
+              maxime! Nam assumenda doloribus qui!
+            </blockquote>
+
+            <cite>- Jane Doe</cite>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact-section" id="sec5">
+      <div class="container">
+        <div class="contact-left">
+          <h2>Contact</h2>
+
+          <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter your message"
+            ></textarea>
+
+            <input
+              type="submit"
+              class="send-message-cta"
+              value="Send message"
+            />
+          </form>
+        </div>
+
+        <div class="contact-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52860.74503364885!2d-118.44956506914238!3d34.10035165561504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc35fbd217ef%3A0xcf1ef9352700d95c!2sBeverly%20Hills%2C%20CA%2090210%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1641930257732!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const mobileBtn = document.getElementById("mobile-cta");
+      nav = document.querySelector("nav");
+      mobileBtnExit = document.getElementById("mobile-exit");
+
+      mobileBtn.addEventListener("click", () => {
+        nav.classList.add("menu-btn");
+      });
+
+      mobileBtnExit.addEventListener("click", () => {
+        nav.classList.remove("menu-btn");
+      });
+    </script>
+  </body>
+</html>
